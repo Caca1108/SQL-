@@ -24,9 +24,9 @@ join film_category fc on f.film_id = fc.film_id ### pakai join ... on ... untuk 
 join category c on fc.category_id = c.category_id ;
 
 select 
-sum (amount) total_pendapatan,
-count (*) jumlah_transaksi,
-min(amount) pembayaran_minimum,
+sum (amount) total_pendapatan, ### pokoknya yg deretan ini sama aja kayak alias (as), u/ mengganti nama keseluruhan yang dioperasikan pada table karena,
+count (*) jumlah_transaksi, ### klok ga ada nama aliasnya justru yang ditulis tuh perintah aja 
+min(amount) pembayaran_minimum, ### jadi yg baca tuh ga paham, yaaaa ujung-ujungnya aku juga ga paham 
 max(amount) pembayaran_maksimum,
 avg (amount) pembayaran_ratarata
 from payment p ;
